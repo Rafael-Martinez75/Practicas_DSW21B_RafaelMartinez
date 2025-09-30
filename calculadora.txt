@@ -1,0 +1,17 @@
+fun main() {
+    println("=Calculadora=")
+    
+    //pedir números y operación
+    print("Ingrese el primer número:")
+    val numero1 = readLine()!!.toDouble()
+    
+    print("ingrese el segundo número:")
+    val numero2 = readLine()!!.toDouble()
+    
+    print("Ingrese la operacion (+,-,*,/):")
+    
+    val operacion = readLine()compareTo()
+    
+    //calcular resultado
+    val resultado = when (operacion)
+}
