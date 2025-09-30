@@ -1,0 +1,10 @@
+fun main() {
+    //Lista de números pares entre 1 y 100
+    val numerosPares = (1..100).filter {
+        it % 2 == 0}
+    
+    //Mostrar la lista
+    println("Números pares entre 1 y 100:")
+    println(numerosPares)
+    
+}
