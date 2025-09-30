@@ -1,0 +1,21 @@
+fun main() {
+    // Arreglo definido con notas de 5 estudiantes
+    val notas = arrayOf(5, 6, 8, 7, 9)
+
+    // Arreglo nulo para almacenar notas temporalmente
+    val notasNull: Array<Int?> = arrayOfNulls(5)
+
+    // Asignar valores al arreglo nulo
+    for (i in notas.indices) {
+        notasNull[i] = notas[i]
+        println("Indice: $i, Nota = ${notasNull[i]}")
+    }
+
+    // Calcular el promedio usando un bucle
+    var suma = 0
+    for (i in notas.indices) {
+        suma += notas[i]
+    }
+    val promedio = suma.toDouble() / notas.size
+    println("Promedio de notas: $promedio")
+}
